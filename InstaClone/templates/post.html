@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+</head>
+<body style="background-color:white;">
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div style="width:400px; height:300px; background-color:white; margin-left:600px; margin-top:150px; border:solid 2px black;" class="big box">
+        <p style="padding-top:40px; margin-left:40px;"><b>Image</b> : <input type="file" name="image" value="{{image}}"></p>
+        <p style="margin-left:40px;"><b>caption : </b></p>
+        <input style="width:200px; height:100px; background-color:white; margin-left:40px; border:solid 2px black; margin-top:10px;" type="text" placeholder="Your review" name="caption" value="{{caption}}">
+        <br><input style="margin-top:10px; width:50px; margin-left:40px; padding-left:10px;" type="submit" value="post">
+    </div>
+</form>
+</body>
+</html>

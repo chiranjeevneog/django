@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login here</title>
+</head>
+<style>
+    body {
+    height:715px;
+    background:linear-gradient(to top left, #33ccff 0%, #ccff33 100%);
+}
+</style>
+<body>
+<center>
+<form method="POST">
+    {% csrf_token %}
+    <fieldset style="width:700px;border-radius:30px;border-color:black;background: linear-gradient(to top left, #ccff33 0%, #66ff66 100%)";>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+       <h1 style="padding-bottom:80px;">
+            LOGIN PORTAL
+       </h1>
+    </font>
+
+<b>USERNAME</b>: &nbsp; &nbsp; &nbsp;  <input style="margin-left:86px; height:30px; width:20%;border-radius:30px;display:inline-block;" type="text" placeholder="USERNAME" name="username" value="{{username}}"><br><br>
+<br/>
+    <b>PASSWORD</b>: &nbsp; &nbsp; &nbsp;  <input style="margin-left:86px; height:30px; width:20%;border-radius:30px;" type="password" placeholder="PASSWORD" name="password" value="{{password}}"><br><br>
+<br/>
+    <br/>
+<input style="width: 100px; margin-left:20px; height:50px; height:30px; width:10%; border-radius:30px;" type="submit" value="LOGIN">
+    </fieldset>
+</form>
+    </center>
+</body>
+</html>
